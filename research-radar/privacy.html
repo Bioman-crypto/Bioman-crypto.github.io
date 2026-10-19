@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ARNDI Research Radar 개인정보처리방침">
+  <title>개인정보처리방침 · ARNDI Research Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">A</span><span>ARNDI Research Radar</span></a>
+    <nav aria-label="정책 메뉴"><a href="./">서비스 소개</a><a href="terms.html">이용약관</a></nav>
+  </header>
+  <main class="legal-wrap">
+    <a class="back-link" href="./">← 서비스 소개로 돌아가기</a>
+    <p class="eyebrow">PRIVACY POLICY</p>
+    <h1>개인정보처리방침</h1>
+    <p class="legal-meta">ARNDI Research Radar · 시행일 2026년 10월 19일</p>
+    <div class="policy-box"><strong>핵심 안내</strong><p>ARNDI Research Radar는 공개된 YouTube 동영상 및 채널 데이터만 API Key 방식으로 조회합니다. 일반 사용자의 Google 로그인, OAuth 토큰, 시청 기록, 비공개 채널 분석 데이터 또는 민감한 개인정보를 수집하지 않습니다.</p></div>
+
+    <h2>1. 운영 주체와 적용 범위</h2>
+    <p>주식회사 브레인스토밍(이하 “회사”)은 내부 콘텐츠 조사 도구인 ARNDI Research Radar(이하 “서비스”)를 운영합니다. 본 방침은 서비스가 YouTube Data API를 통해 처리하는 데이터와 서비스 운영 과정에 적용됩니다.</p>
+
+    <h2>2. 사용하는 API 서비스</h2>
+    <p>서비스는 YouTube Data API를 사용하며, 공개 데이터 조회를 위해 <code>search.list</code>, <code>videos.list</code>, <code>channels.list</code>, <code>playlistItems.list</code> 엔드포인트를 사용합니다. 서비스는 Google 계정 로그인을 요구하지 않으며 OAuth 2.0 사용자 인증정보를 수집하거나 저장하지 않습니다.</p>
+
+    <h2>3. 처리하는 데이터</h2>
+    <h3>3.1 YouTube가 공개적으로 제공하는 데이터</h3>
+    <ul>
+      <li>동영상 ID, 제목, 설명, 썸네일, 게시일, 재생시간</li>
+      <li>채널 ID와 채널명</li>
+      <li>공개 조회수, 좋아요 수, 댓글 수 등 공개 통계</li>
+      <li>검색어, 정렬 방식 및 데이터 관측 시각</li>
+    </ul>
+    <h3>3.2 독립적으로 계산하는 지표</h3>
+    <ul>
+      <li>최근 조회 증가 속도: 두 관측 시점의 공개 조회수 차이를 실제 경과시간으로 나눈 값</li>
+      <li>채널 기준 성과 배수: 현재 공개 조회수를 같은 채널·같은 형식의 최근 유효 영상 조회수 중앙값과 비교한 값</li>
+    </ul>
+    <p><strong>위 지표는 YouTube가 직접 제공하거나 보증하는 측정항목이 아닙니다.</strong> 회사가 공개 API 데이터를 바탕으로 독립적으로 계산합니다.</p>
+    <h3>3.3 수집하지 않는 데이터</h3>
+    <ul>
+      <li>시청자의 이름, 이메일, 계정 ID 또는 시청 기록</li>
+      <li>비공개 YouTube Analytics 및 YouTube Reporting API 데이터</li>
+      <li>Google OAuth 액세스 토큰 또는 갱신 토큰</li>
+      <li>건강, 정치성향 등 민감정보와 개인별 프로파일</li>
+    </ul>
+
+    <h2>4. 이용 목적</h2>
+    <p>데이터는 공개 동영상의 최근 변화와 채널 내 상대 성과를 검토하고, ARNDI 교육 콘텐츠의 주제와 참고 형식을 결정하기 위한 내부 조사 목적으로만 사용됩니다. 서비스는 외부 사용자에게 판매·대여하거나 광고 타기팅에 사용하지 않습니다.</p>
+
+    <h2>5. 보관, 갱신 및 삭제</h2>
+    <ul>
+      <li>동영상 제목, 설명, 썸네일, 채널명 등 비통계 API 데이터는 30일 이내에 갱신하거나 삭제합니다. 현재 운영 기준은 29일 이내 갱신 또는 삭제입니다.</li>
+      <li>공개 조회수·좋아요 수·댓글 수와 이를 이용한 파생지표는 YouTube의 파생 측정항목 및 데이터 보관 관련 추가 정책 적용 승인을 받은 범위에서 최대 36개월 동안 보관할 수 있습니다.</li>
+      <li>추가 정책 승인을 받지 않았거나 승인이 종료된 경우에는 적용되는 YouTube API 개발자 정책에 따라 데이터를 갱신 또는 삭제합니다.</li>
+      <li>운영 목적이 끝나거나 API 접근이 종료되면 관련 데이터를 안전하게 삭제합니다.</li>
+    </ul>
+
+    <h2>6. 제3자 제공과 판매</h2>
+    <p>회사는 서비스가 수집한 API 데이터를 제3자에게 판매하지 않습니다. 또한 외부 광고, 사용자 신용평가 또는 개인 추적 목적으로 제공하지 않습니다.</p>
+
+    <h2>7. 보안</h2>
+    <p>데이터와 API 인증정보는 운영자가 관리하는 로컬 환경에 저장됩니다. API Key는 공개 저장소나 공개 화면에 표시하지 않으며, 가능한 경우 애플리케이션과 API 사용 범위를 제한합니다.</p>
+
+    <h2>8. 데이터 삭제 및 문의</h2>
+    <p>서비스와 관련된 데이터 처리 또는 삭제에 관한 문의는 아래 연락처로 접수할 수 있습니다. 요청 내용을 확인한 후 적용되는 법률과 YouTube API 정책에 따라 처리합니다.</p>
+    <ul><li>운영자: 주식회사 브레인스토밍</li><li>이메일: <a href="mailto:bioman@brainstorming-kr.com">bioman@brainstorming-kr.com</a></li></ul>
+
+    <h2>9. 외부 서비스 정책</h2>
+    <p>서비스의 YouTube API 사용에는 YouTube 및 Google의 정책이 적용됩니다.</p>
+    <ul>
+      <li><a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 서비스 약관</a></li>
+      <li><a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+      <li><a href="https://developers.google.com/youtube/terms/developer-policies?hl=ko" target="_blank" rel="noopener">YouTube API 서비스 개발자 정책</a></li>
+    </ul>
+
+    <h2>10. 방침 변경</h2>
+    <p>서비스 기능이나 관련 정책이 변경되는 경우 본 방침을 수정할 수 있습니다. 중요한 변경사항은 시행 전에 이 페이지에 표시합니다.</p>
+  </main>
+  <footer><div><strong>주식회사 브레인스토밍</strong><p>ARNDI Research Radar</p></div><div class="footer-links"><a href="./">서비스 소개</a><a href="terms.html">서비스 이용약관</a></div></footer>
+</body>
+</html>

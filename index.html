@@ -1,40 +1,32 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ARNDI Studio</title>
-<style>
-  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #e3e3e3; --link: #1a5fd0; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #151515; --fg: #ededed; --muted: #a0a0a0; --line: #2c2c2c; --link: #7aa7ff; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
-  h1 { font-size: 28px; margin: 0 0 8px; }
-  p, li { color: var(--fg); }
-  .muted { color: var(--muted); }
-  a { color: var(--link); }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="주식회사 브레인스토밍의 ARNDI 콘텐츠 연구 도구 안내">
+  <title>Brainstorming · ARNDI</title>
+  <link rel="stylesheet" href="research-radar/styles.css">
 </head>
 <body>
-<main>
-  <h1>ARNDI Studio</h1>
-  <p class="muted">유튜브 채널 「아랜디 | 김책임」 운영자가 개인적으로 쓰는 콘텐츠 제작 도구입니다.</p>
-
-  <p>ARNDI Studio는 운영자 본인의 유튜브 채널에 올린 쇼츠의 성적(조회수, 시청 비율 등)을
-  YouTube Analytics API로 <strong>읽기 전용</strong>으로 가져와, 다음 콘텐츠의 제목을 고르는 데 참고합니다.</p>
-  <ul>
-    <li>운영자 본인의 채널 데이터만 읽습니다.</li>
-    <li>영상 업로드·수정·삭제 등 채널을 바꾸는 기능은 없습니다.</li>
-    <li>일반 사용자에게 제공하는 서비스가 아닙니다.</li>
-  </ul>
-
-  <hr>
-  <p>ARNDI Studio is a private tool used by the owner of the YouTube channel "아랜디 | 김책임".
-  It reads the owner's own channel analytics (read-only) through the YouTube Analytics API to review how uploaded Shorts performed.
-  It does not upload, edit or delete anything, and it is not offered to other users.</p>
-
-  <p><a href="privacy.html">개인정보처리방침 (Privacy Policy)</a></p>
-</main>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Brainstorming ARNDI 홈"><span class="brand-mark">A</span><span>Brainstorming · ARNDI</span></a>
+    <nav aria-label="주요 메뉴"><a href="research-radar/">Research Radar</a><a href="research-radar/privacy.html">개인정보처리방침</a></nav>
+  </header>
+  <main>
+    <section class="hero compact-hero">
+      <p class="eyebrow">BRAINSTORMING · ARNDI</p>
+      <h1>연구와 진로를 더 잘 설명하는<br>교육 콘텐츠를 만듭니다.</h1>
+      <p class="hero-copy">주식회사 브레인스토밍은 ‘아랜디 | 김책임’ 채널을 통해 대학원 진학, 생명과학 연구와 R&amp;D 진로에 관한 교육 콘텐츠를 제작합니다.</p>
+      <div class="hero-actions"><a class="button primary" href="research-radar/">ARNDI Research Radar 소개</a><a class="button secondary" href="https://www.youtube.com/@ARNDI_Kim" target="_blank" rel="noopener">아랜디 채널 방문</a></div>
+    </section>
+    <section class="section grid-two" aria-labelledby="tools-title">
+      <div><p class="eyebrow">INTERNAL RESEARCH</p><h2 id="tools-title">콘텐츠 의사결정을 위한 내부 연구 도구</h2></div>
+      <div class="card"><h3>ARNDI Research Radar</h3><p>공개된 동영상과 채널 데이터를 바탕으로 주제의 움직임과 채널별 상대 성과를 검토하는 내부 콘텐츠 조사 도구입니다.</p><a class="text-link" href="research-radar/">서비스와 데이터 사용 방식 보기 →</a></div>
+    </section>
+  </main>
+  <footer>
+    <div><strong>주식회사 브레인스토밍</strong><p>문의: <a href="mailto:bioman@brainstorming-kr.com">bioman@brainstorming-kr.com</a></p></div>
+    <div class="footer-links"><a href="research-radar/privacy.html">개인정보처리방침</a><a href="research-radar/terms.html">서비스 이용약관</a></div>
+  </footer>
 </body>
 </html>

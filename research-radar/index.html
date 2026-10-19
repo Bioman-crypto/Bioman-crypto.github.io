@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ARNDI Research Radar - 공개 YouTube 데이터를 활용하는 브레인스토밍의 내부 콘텐츠 조사 도구">
+  <title>ARNDI Research Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Brainstorming ARNDI 홈"><span class="brand-mark">A</span><span>ARNDI Research Radar</span></a>
+    <nav aria-label="주요 메뉴"><a href="#how-it-works">작동 방식</a><a href="#data">데이터 사용</a><a href="privacy.html">개인정보처리방침</a><a href="terms.html">이용약관</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">INTERNAL EDITORIAL RESEARCH TOOL</p>
+      <h1>다음 콘텐츠의 가능성을<br>공개 데이터에서 발견합니다.</h1>
+      <p class="hero-copy">ARNDI Research Radar는 주식회사 브레인스토밍이 운영하는 내부 콘텐츠 조사 도구입니다. 공개된 동영상과 채널 데이터를 검토하여 최근 관심이 움직이는 주제와 채널별 상대 성과를 파악합니다.</p>
+      <div class="hero-actions"><a class="button primary" href="#how-it-works">작동 방식 보기</a><a class="button secondary" href="privacy.html">데이터 처리 원칙</a></div>
+      <a class="hero-source" href="https://www.youtube.com/@ARNDI_Kim" target="_blank" rel="noopener"><span>공개 동영상·채널 데이터 출처</span><img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-dark.png" alt="Developed with YouTube"></a>
+    </section>
+    <section id="how-it-works" class="section">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>발견부터 검토까지, 세 단계로 작동합니다.</h2>
+      <div class="card-grid">
+        <article class="card"><span class="number">01</span><h3>공개 영상 발견</h3><p>사전에 정의한 연구·대학원·R&amp;D 관련 검색어로 공개 동영상을 찾고 제목, 게시일과 채널 정보를 정리합니다.</p></article>
+        <article class="card"><span class="number">02</span><h3>성과 맥락 비교</h3><p>현재 공개 조회수와 시간에 따른 변화량을 확인하고, 같은 채널·같은 형식의 최근 영상과 비교합니다.</p></article>
+        <article class="card"><span class="number">03</span><h3>사람이 최종 판단</h3><p>분석 결과는 아이디어 참고 자료일 뿐입니다. 주제 선정과 콘텐츠 제작 여부는 담당자가 직접 검토하고 결정합니다.</p></article>
+      </div>
+    </section>
+    <section id="data" class="section grid-two">
+      <div><p class="eyebrow">DATA &amp; METRICS</p><h2>원본 통계와 자체 계산값을 분리합니다.</h2><p>화면에서는 YouTube Data API가 제공하는 공개 값과 ARNDI가 독립적으로 계산한 값을 명확하게 구분합니다.</p></div>
+      <div>
+        <table class="metric-table"><tbody>
+          <tr><th scope="row">YouTube 공개 데이터</th><td>제목, 게시일, 채널명, 동영상 길이, 공개 조회수·좋아요 수·댓글 수</td></tr>
+          <tr><th scope="row">최근 조회 증가 속도</th><td>두 관측 시점 사이의 공개 조회수 증가량을 실제 경과시간으로 나눈 ARNDI 자체 계산값</td></tr>
+          <tr><th scope="row">채널 기준 성과 배수</th><td>현재 공개 조회수를 같은 채널·같은 형식의 최근 유효 영상 조회수 중앙값과 비교한 ARNDI 자체 계산값</td></tr>
+        </tbody></table>
+        <p class="disclosure"><strong>중요:</strong> 자체 계산 지표는 YouTube가 제공하거나 보증하는 측정항목이 아니며, 공개 데이터를 바탕으로 주식회사 브레인스토밍이 독립적으로 산출합니다.</p>
+      </div>
+    </section>
+    <section class="section grid-two">
+      <div><p class="eyebrow">BOUNDARIES</p><h2>내부 조사에 필요한 범위만 사용합니다.</h2></div>
+      <div class="card"><ul>
+        <li>일반 사용자에게 판매하거나 구독 서비스로 제공하지 않습니다.</li>
+        <li>동영상을 자동 업로드·수정·삭제하지 않습니다.</li>
+        <li>Google 계정 로그인이나 OAuth 권한을 요구하지 않습니다.</li>
+        <li>비공개 YouTube Analytics 데이터에 접근하지 않습니다.</li>
+        <li>시청자 개인을 식별하거나 민감정보를 추론하지 않습니다.</li>
+        <li>모든 후보 영상은 원본 YouTube 페이지로 연결됩니다.</li>
+      </ul></div>
+    </section>
+    <section class="section" aria-labelledby="source-title">
+      <div class="youtube-attribution">
+        <p id="source-title">동영상과 채널 정보의 출처는 YouTube입니다. 아래 공식 브랜딩은 데이터 출처를 표시하며, 누르면 운영 채널의 YouTube 페이지로 이동합니다.</p>
+        <a href="https://www.youtube.com/@ARNDI_Kim" target="_blank" rel="noopener" aria-label="아랜디 YouTube 채널 방문"><img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-dark.png" alt="Developed with YouTube"></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div><strong>운영: 주식회사 브레인스토밍</strong><p>문의: <a href="mailto:bioman@brainstorming-kr.com">bioman@brainstorming-kr.com</a></p></div>
+    <div class="footer-links"><a href="privacy.html">개인정보처리방침</a><a href="terms.html">서비스 이용약관</a><a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener">Google 개인정보처리방침</a></div>
+  </footer>
+</body>
+</html>
